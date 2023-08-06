@@ -7,15 +7,25 @@
 
 #string concatenation
 
+import random
+
 author = "Franklin D. Roosevelt"
-funnyAuthor = "Dranklin R. Foosevelt"
-noun1 = input{"Noun 1: "}
-noun2 = input{"Noun 2: "}
-noun3 = input{"Noun 3: "}
-noun4 = input{"Noun 4: "}
+noun1 = input("Noun 1: ")
+noun2 = input("Noun 2: ")
+noun3 = input("Noun 3: ")
+noun4 = input("Noun 4: ")
+funnyAuthor = input("Who is this quote attributed to?")
 
+# Randomise the order of the nouns so that they appear in a funny way
 
-madlib = f"The only Limit to our {noun1} of {noun2} will be our {noun3} of {noun4}. - {funnyAuthor} "
+# Create a list with the given nouns
+nouns = [noun1, noun2, noun3, noun4]
 
+# Shuffle the list of nouns
+random.shuffle(nouns)
 
-#then randomise the order of the nouns so that they appear in a funny way
+# Join the list of nouns into an fstring
+madlib = f"The only Limit to our {nouns[0]} of {nouns[1]} will be our {nouns[2]} of {nouns[3]}. - {funnyAuthor} "
+
+# Print the string
+print(madlib)
