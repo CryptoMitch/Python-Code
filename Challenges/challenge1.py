@@ -36,3 +36,6 @@ print(','.join(l))
 
 
 #How my answer differed and what I could do to improve it?
+    #1 Lists are considered more compact than for loops with append()
+    #2 I could add extra space between my comments and codes to make it more readable
+    # Descriptive variable names would improve readability somewhat
