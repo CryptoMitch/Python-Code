@@ -1,6 +1,6 @@
 # Question: 
-# Write a program which will find all such numbers which
-# are divisible by 7 but are not a multiple of 5, 
+# Write a program that will find all such numbers which
+# are divisible by seven but are not a multiple of five, 
 # between 2000 and 3200 (both included). 
 # The numbers obtained should be printed in a 
 # comma-separated sequence on a single line.
@@ -14,8 +14,8 @@
 
 # My Solution
 
-# Look for numbers in range starting with 2000 and ending in 3200
-# Look for numbers whose remainder is 0 when divided by 7 but not by 5.
+# Look for numbers in the range starting with 2000 and ending in 3200
+# Look for numbers whose remainder is 0 when divided by seven but not by 5.
 x = [n for n in range(2000, 3201) if n % 7 == 0 and n % 5 != 0]
 
 # Print the result of this
@@ -35,7 +35,7 @@ for i in range(2000, 3201):
 print(','.join(l))
 
 
-#How my answer differed and what I could do to improve it?
-    #1 Lists are considered more compact than for loops with append()
-    #2 I could add extra space between my comments and codes to make it more readable
-    # Descriptive variable names would improve readability somewhat
+#How my answer differed, and what could I do to improve it?
+    # 1 Lists are considered more compact than loops with append()
+    # 2 I could add extra space between my comments and codes to make it more readable
+    # 3 Descriptive variable names would improve readability somewhat
