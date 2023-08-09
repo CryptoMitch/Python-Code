@@ -6,20 +6,6 @@
 
 # View the instructions to the game here: https://adams.osu.edu/sites/adams/files/imce/4-H/STEM_Camp/Rock%20Paper%20Scissors%20Lizard%20Spock.pdf
 
-# The rules of Rock-paper-scissors-lizard-Spock are:
-    # Scissors cut paper = s > p
-    # Paper covers rock = p > r
-    # Rock breaks scissors r > s
-    # Rock crushes lizard = r > l
-    # Lizard poisons Spock = l > sp
-    # Spock smashes (or melts) scissors = sp > s
-    # Scissors decapitate lizard = s > l
-    # Lizard eats paper = l > p
-    # Paper disproves Spock = p > sp
-    # Spock vaporizes rock = sp > r
-    
-
-
 import random
 
 def playGame():
