@@ -16,4 +16,20 @@ class Player:
          pass
 
 
-# Use inheritance to build two extra players that inherits from the base player class
+# Use inheritance to build two extra players that inherit from the base player class
+class RandomComputerPlayer(Player):
+    def __init__(self, team):
+        super().__init__(team)
+        
+    def get_move(self, game):
+        pass
+    
+class HumanPlayer(Player):
+    def __init__(self, team):    
+        super().__init__(team)
+    
+    def get_move(self, game):
+        pass
+    
+    
+    
