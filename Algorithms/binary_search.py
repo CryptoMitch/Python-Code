@@ -1,20 +1,29 @@
 # Binary Search Algorithm
 
-# Time complexity: O(n)
+# Time complexity: O(log n)
 
-Efficient search algorithm for ordered lists
+# Divide and conquer style algorithm
+# Efficient for ordered lists
 
 def binary_search(arr, target):
     low, high = 0, len(arr) -1
 
     while low <= high:
-        mid = low + (high-low) // 2
+        # calculate the middle element
+        mid = low + (high-low) // 2 # floor division operator divides by 2 and rounds down
         
-        if low (< target)
-            += 1
-        elif high (>= target)
-            -= 1
-        else mid == target
-        return(mid)
+        if arr[mid] == target:
+            return mid
+        elif arr[mid < target]:
+            low = mid + 1
+        else: 
+            high = mid - 1
+        
     return -1
+
+list = [2, 4, 6, 9, 13, 17, 19, 21, 22, 23, 55, 80, 100, 140, 150, 173, 189, 200]
+
+target = 173
+
+result = binary_search(list, target)
 
