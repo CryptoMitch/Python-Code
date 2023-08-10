@@ -2,7 +2,9 @@
 
 def fib(n):
     if n < 2:
-        return("Please go higher than 1 to begin the fib calculation")
+        return n
     return fib(n-2) + fib(n-1)
-        
-print(input(n))
+
+user_input = int(input("Which Fibonacci Number would you like to calculate? "))
+result = fib(user_input)
+print(f"The {user_input}th Fibonacci number is: {result}")
