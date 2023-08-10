@@ -1,0 +1,20 @@
+# Linear Search Algorithm
+
+# Time complexity: O(n)
+
+# Sequentially checks each element in a list until a match is found 
+# or the entire list has been searched.
+
+def linear_search(arr, target):
+    index = 0
+    while index < len(arr):
+        if arr[index] == target:
+            return index
+        index += 1
+    return -1 
+
+my_list = [1, 5, 8, 9, 12, 15, 18, 23, 55, 74, 81, 90, 111, 154, 186, 200]
+
+result = linear_search(my_list, 99)
+
+print(result)

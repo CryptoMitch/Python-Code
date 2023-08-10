@@ -1,4 +1,4 @@
-# Write some code to calculate the 123rd Fibonacci Number
+# Write some code to calculate the nth Fibonacci Number
 
 def fib(n):
     if n < 2:
