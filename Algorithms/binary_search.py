@@ -27,3 +27,7 @@ target = 173
 
 result = binary_search(list, target)
 
+if result != -1:
+    print(f'Array item {target} found at index {result}.')
+else:
+    print(f'Array item {target} not found in the array.')
