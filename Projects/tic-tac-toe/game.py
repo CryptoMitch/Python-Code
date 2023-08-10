@@ -17,7 +17,10 @@ class TicTacToe:
             print('| ' + ' |' .join() + ' |')
             
     @staticmethod # Deco
-    rator to define static method in the class.      
+    #to define static method in the class.     
     def print_board_numbers():
         # give the number in each row for each row
         number_board = [[str(column_index) for column_index in range(row_index*3, (row_index+1)*3)] for row_index in range(3)]
+        for row in number_board:
+            print('| ' + ' |' .join() + ' |')
+        
