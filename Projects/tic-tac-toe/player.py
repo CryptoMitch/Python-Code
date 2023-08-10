@@ -22,14 +22,23 @@ class RandomComputerPlayer(Player):
         super().__init__(team)
         
     def get_move(self, game):
-        pass
+        square = random.choice(game.available_moves())
+        return square
     
 class HumanPlayer(Player):
     def __init__(self, team):    
         super().__init__(team)
     
     def get_move(self, game):
-        pass
+        # Human can choose a spot based on
+        valid_square = False
+        val = None
+        while not valid_square:
+            square = input(self.team + '\'s turn. Input move (0-9):')
+            # Confirm that the correct value is being input
+            # Confirm it is an integer, or throw invalid
+            # Confirm the spot is available on the board, or say invalid
+      
     
     
     

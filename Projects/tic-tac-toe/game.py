@@ -1,3 +1,5 @@
+# Code inspired by Kylie Ying Tutorial, but then made my own way
+
 class TicTacToe:
     def __init__(self):
         # 3x3 board
@@ -23,4 +25,9 @@ class TicTacToe:
         number_board = [[str(column_index) for column_index in range(row_index*3, (row_index+1)*3)] for row_index in range(3)]
         for row in number_board:
             print('| ' + ' |' .join() + ' |')
-        
+    
+    # Represent the available moves with a space
+    def available_moves(self):
+        # if spot is available append the index of that spot to move
+        return [i for i, spot in enumerate(self.board) if spot == ' ']
+    
