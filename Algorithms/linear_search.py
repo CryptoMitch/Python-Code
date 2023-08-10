@@ -29,6 +29,4 @@ end_time = time.time() # Store end time in a variable
 # Calculate the elapsed time
 elapsed_time = end_time - start_time
 print(f'Linear search took {elapsed_time: .6f} seconds')
-
-
 print(f'Index location: {result}')
