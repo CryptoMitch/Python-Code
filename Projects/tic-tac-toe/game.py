@@ -31,3 +31,21 @@ class TicTacToe:
         # if spot is available append the index of that spot to move
         return [i for i, spot in enumerate(self.board) if spot == ' ']
     
+    def empty_squares(self):
+        # check if there are any empty squares in the board
+        return ' ' in self.board
+    
+    def num_empty_squares(self):
+        return self.board.count(' ')
+
+def play(game, x_player, o_player, print_game=True):
+    if print_game:
+        #see which numbers correspond to which spot 
+        game.print_board_nums()
+        
+    letter = 'X' # starting letter
+    
+    # while the game still has empty squares, keep playing
+    while game.empty_squares():
+        # get the move from the appropriate player
+        pass
