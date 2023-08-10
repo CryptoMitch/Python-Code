@@ -25,10 +25,11 @@ class RandomComputerPlayer(Player):
         square = random.choice(game.available_moves())
         return square
     
-class HumanPlayer(Player):
+class HumanPlayer(Player): 
     def __init__(self, team):    
         super().__init__(team)
     
+    # Functionality for Human Player's next move
     def get_move(self, game):
         # Human can choose a spot based on
         valid_square = False
@@ -37,8 +38,15 @@ class HumanPlayer(Player):
             square = input(self.team + '\'s turn. Input move (0-9):')
             # Confirm that the correct value is being input
             # Confirm it is an integer, or throw invalid
-            # Confirm the spot is available on the board, or say invalid
-      
+            try:
+                val = int(square)
+                if val not in game.available_moves():
+                    raise ValueError
+                valid_square = True #if the above checks are valid
+            except ValueError:
+                print("Invalid square, try again.")
+
+        return val
     
     
     
