@@ -1,9 +1,9 @@
-# Binary Search Algorithm
+# Binary Search Algorithm (Integers)
 
 # Time complexity: O(log n)
 
-# Divide and conquer style algorithm
-# Efficient for ordered lists
+# Divide and conquer style algorithm on integers
+# Efficient for ordered number lists
 
 def binary_search(arr, target):
     low, high = 0, len(arr) -1
