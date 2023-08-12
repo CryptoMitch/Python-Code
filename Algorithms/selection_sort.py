@@ -1,0 +1,21 @@
+# Selection Sort
+
+# Repeatedly selecting the minimum (or maximum) element 
+# from the unsorted part of the array and 
+# placing it at the beginning of the sorted part
+
+# Time Complexity: O(n^2) Quadratic
+# Inefficent for large arrays
+
+def selection_sort(arr):
+    n = len(arr)
+    smallest_element = 0
+    
+    
+    
+
+
+# Provide the array
+arr = [34, 54, 76, 22, 45, 6, 12, 98, 43, 67, 55]
+selection_sort(arr) #run the function
+print(f'This is the selected array: {result}.')
