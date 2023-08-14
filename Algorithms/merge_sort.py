@@ -11,4 +11,14 @@
     # Divide
     # Conquer
     # Merge
-    
+
+
+def merge_sort(arr):
+    # if the length of the array is greater than 1
+    if len(arr) > 1:
+        # Find the middle
+        mid = len(arr) // 2
+        # Divide the array into two lists
+        left_half = arr[:mid] # Use slice notation to create left sublist
+        right_half = arr[mid:] # Use slice notation to create right sublist
+        
