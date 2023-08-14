@@ -6,12 +6,6 @@
 
 # Space Complexity: O(n) 
 
-
-#Steps 
-    # Divide
-    # Conquer
-    # Merge
-
 def merge_sort(arr):
     # DIVIDE - Create Sublists
     # if the length of the array is greater than 1
@@ -27,10 +21,13 @@ def merge_sort(arr):
     merge_sort(left_half)
     merge_sort(right_half)
     
-    # CONQUER - Merge the two lists
+    # MERGE/CONQUER - Merge the two lists
     
     # Initialise three viables to keep track of the positions
-    left_index = 0
-    right_index = 0
-    merged_index = 0
+    left_index = 0 # Tracks the position in the left sublist
+    right_index = 0 # Tracks the position in the right sublist
+    merged_index = 0 # Tracks the position in merged as elements are chosen and merged into the arr, the merged_index is incremented to indicate the next available position in the merged array.
+    
+    
+while left_index < len(left_half) and right_index < len(right_half):
     
