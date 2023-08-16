@@ -38,7 +38,7 @@ class Bear: # Superclass that is shared by all bears in the story
 def main():
     # Create instances of each bear and assign to variables for each bear in the story
     baby_bear= Bear("Baby Bear", 30, 3) # 30 degree porridge and medium bed softness
-    mama_bear= Bear("Baby Bear", 40, 5) # 40 degree porridge and soft bed softness
+    mama_bear= Bear("Mama Bear", 40, 5) # 40 degree porridge and soft bed softness
     papa_bear= Bear("Papa Bear", 50, 10) # 50 degree porridge and medium-hard bed softness
     
     print('Goldilocks is in the bears house!\n')
@@ -46,10 +46,10 @@ def main():
     goldilocks_porridge = int(input('How hot do you want your porridge?(Between 0 and 100): '))
     goldilocks_bed = int(input('How soft do you want your bed?(Between 0 and 10): '))
     
-    print("\Goldilocks tried the porridge:\n")
-    print(baby_bear.eat_porridge(goldilocks_porridge))
-    print(mama_bear.eat_porridge(goldilocks_porridge))
-    print(papa_bear.eat_porridge(goldilocks_porridge))
+    print("Goldilocks tried the porridge:\n")
+    print(f"Goldilocks found {baby_bear.name}'s porridge {baby_bear.eat_porridge(goldilocks_porridge)}")
+    print(f"Goldilocks found {mama_bear.name}'s porridge {mama_bear.eat_porridge(goldilocks_porridge)}")
+    print(f"Goldilocks found {papa_bear.name}'s porridge {papa_bear.eat_porridge(goldilocks_porridge)}")
     
     print("\nGoldilocks tired the beds: \n")
     print(baby_bear.try_bed(goldilocks_bed))
