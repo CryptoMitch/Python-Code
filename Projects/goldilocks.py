@@ -17,8 +17,18 @@ class Bear: # Superclass that is shared by all bears in the story
         self.porridge_temp = porridge_temp
         self.bed_softness = bed_softness
         
-def eat_porridge(self, porridge_temp):
-    if self.porridge_temp == porridge_temp:
+    def eat_porridge(self, porridge_temp):
+        if self.porridge_temp == porridge_temp:
+            return f"{self.name} found the porridge temp just right!"
+        elif self.porridge_temp < porridge_temp:
+            return f"{self.name} found the porridge too hot!"
+        else:
+            return f"{self.name} found the porridge too cold."
+    
+    
+    
+    
+    
 
 # Entry Point
 # High-level logic: Create instances of the Bear class
