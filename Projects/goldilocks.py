@@ -25,20 +25,36 @@ class Bear: # Superclass that is shared by all bears in the story
         else:
             return f"{self.name} found the porridge too cold."
     
-    def try_Bed(self, softness):
+    def try_bed(self, softness):
         if self.bed_softness == softness: # Use porridge_temp to access the bears prefered temp and compare for equality to the actual temp
             return f'{self.name} found the bed just right!'
         elif self.bed_softness < softness: # bed_softness is the prefered softness, whilst softness is the actual softness of the bed
             return f'{self.name} found the bed too hard!'
         else:
             return f'{self.name} found the bed too soft.'
-    
-    
-    
 
 # Entry Point
 # High-level logic: Create instances of the Bear class
 def main():
-    baby_bear("Baby Bear", 30, 3) # 30 degree porridge and medium bed softness
-    mama_bear("Baby Bear", 40, 5) # 40 degree porridge and soft bed softness
-    papa_bear("Papa Bear", 50, 10) # 50 degree porridge and medium-hard bed softness
+    # Create instances of each bear and assign to variables for each bear in the story
+    baby_bear= Bear("Baby Bear", 30, 3) # 30 degree porridge and medium bed softness
+    mama_bear= Bear("Baby Bear", 40, 5) # 40 degree porridge and soft bed softness
+    papa_bear= Bear("Papa Bear", 50, 10) # 50 degree porridge and medium-hard bed softness
+    
+    print('Goldilocks is in the bears house!\n')
+    
+    goldilocks_porridge = int(input('How hot do you want your porridge?(Between 0 and 100): '))
+    goldilocks_bed = int(input('How soft do you want your bed?(Between 0 and 10): '))
+    
+    print("\Goldilocks tried the porridge:\n")
+    print(baby_bear.eat_porridge(goldilocks_porridge))
+    print(mama_bear.eat_porridge(goldilocks_porridge))
+    print(papa_bear.eat_porridge(goldilocks_porridge))
+    
+    print("\nGoldilocks tired the beds: \n")
+    print(baby_bear.try_bed(goldilocks_bed))
+    print(mama_bear.try_bed(goldilocks_bed))
+    print(papa_bear.try_bed(goldilocks_bed))
+    
+if __name__ == "__main__":
+    main()
