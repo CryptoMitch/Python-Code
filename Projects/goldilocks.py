@@ -10,25 +10,25 @@
 # Enjoy the playful interactions between Goldilocks and Baby Bear, Mama Bear, and Papa Bear!
 
 #low level logic: class definitions, methods
-class Bear: # Superclass that is shared by all bears in the story
-    def __init__(self, name, porridge_temp, bed_softness): # Constructor, automatically called when creating a new instance. It sets up the initial state of the object.
+class Bear:
+    def __init__(self, name, porridge_temp, bed_softness): 
         # Instances of the bear class will have access to these methods
         self.name = name
         self.porridge_temp = porridge_temp
         self.bed_softness = bed_softness
         
-    def eat_porridge(self, temp): # Methods take two parameters
-        if self.porridge_temp == temp: # Use porridge_temp to access the bears prefered temp and compare for equality to the actual temp
+    def eat_porridge(self, temp): 
+        if self.porridge_temp == temp: 
             return "just right!"
-        elif self.porridge_temp > temp: # porridge_temp is the prefered temperature whilst temp is the actual temperature
+        elif self.porridge_temp > temp:
             return "too hot!"
         else:
             return "too cold."
     
     def try_bed(self, softness):
-        if self.bed_softness == softness: # Use porridge_temp to access the bears prefered temp and compare for equality to the actual temp
+        if self.bed_softness == softness: 
             return 'just right!'
-        elif self.bed_softness > softness: # bed_softness is the prefered softness, whilst softness is the actual softness of the bed
+        elif self.bed_softness > softness:
             return 'too hard!'
         else:
             return 'too soft.'
