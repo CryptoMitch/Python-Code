@@ -19,19 +19,19 @@ class Bear: # Superclass that is shared by all bears in the story
         
     def eat_porridge(self, temp): # Methods take two parameters
         if self.porridge_temp == temp: # Use porridge_temp to access the bears prefered temp and compare for equality to the actual temp
-            return f"{self.name} found the porridge temp just right!"
-        elif self.porridge_temp < temp: # porridge_temp is the prefered temperature whilst temp is the actual temperature
-            return f"{self.name} found the porridge too hot!"
+            return "just right!"
+        elif self.porridge_temp > temp: # porridge_temp is the prefered temperature whilst temp is the actual temperature
+            return "too hot!"
         else:
-            return f"{self.name} found the porridge too cold."
+            return "too cold."
     
     def try_bed(self, softness):
         if self.bed_softness == softness: # Use porridge_temp to access the bears prefered temp and compare for equality to the actual temp
-            return f'{self.name} found the bed just right!'
-        elif self.bed_softness < softness: # bed_softness is the prefered softness, whilst softness is the actual softness of the bed
-            return f'{self.name} found the bed too hard!'
+            return 'just right!'
+        elif self.bed_softness > softness: # bed_softness is the prefered softness, whilst softness is the actual softness of the bed
+            return 'too hard!'
         else:
-            return f'{self.name} found the bed too soft.'
+            return 'too soft.'
 
 # Entry Point
 # High-level logic: Create instances of the Bear class
@@ -51,10 +51,10 @@ def main():
     print(f"Goldilocks found {mama_bear.name}'s porridge {mama_bear.eat_porridge(goldilocks_porridge)}")
     print(f"Goldilocks found {papa_bear.name}'s porridge {papa_bear.eat_porridge(goldilocks_porridge)}")
     
-    print("\nGoldilocks tired the beds: \n")
-    print(baby_bear.try_bed(goldilocks_bed))
-    print(mama_bear.try_bed(goldilocks_bed))
-    print(papa_bear.try_bed(goldilocks_bed))
+    print("Goldilocks tried the beds: \n")
+    print(f"Goldilocks found {baby_bear.name}'s bed {baby_bear.try_bed(goldilocks_bed)}")
+    print(f"Goldilocks found {mama_bear.name}'s bed {mama_bear.try_bed(goldilocks_bed)}")
+    print(f"Goldilocks found {papa_bear.name}'s bed {papa_bear.try_bed(goldilocks_bed)}")
     
 if __name__ == "__main__":
     main()
