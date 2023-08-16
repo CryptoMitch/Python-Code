@@ -19,7 +19,7 @@ Feel free to explore and use any of the code provided here.
 6. ... (More projects are being added)
 
 
-** Fairy Tale Inspired Projects **
+**Fairy Tale Inspired Projects**
 
 Explore a whimsical world of Python projects inspired by classic fairy tales:
 
@@ -35,7 +35,7 @@ Explore a whimsical world of Python projects inspired by classic fairy tales:
 10. Snow White (Coming soon)
 
 
-** Algorithms **
+**Algorithms**
 
 Explore various algorithms implemented in Python:
 
@@ -54,7 +54,7 @@ Explore various algorithms implemented in Python:
 13. Traveling Salesman Problem (Brute Force) (Coming soon)
 
 
-** Tests **
+**Tests**
 1. unit_test_sample.py (Completed)
 2. reverse_words_test.py (Completed)
 3. ... (More tests are being added)
