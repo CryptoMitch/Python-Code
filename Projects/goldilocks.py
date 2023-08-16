@@ -11,9 +11,9 @@
 
 #low level logic: class definitions, methods
 class Bear: # Superclass that is shared by all bears in the story
-    def __init__(self, name, porride_temp, bed_softness): # Constructor, automatically called when creating a new instance. It sets up the initial state of the object.
+    def __init__(self, name, porridge_temp, bed_softness): # Constructor, automatically called when creating a new instance. It sets up the initial state of the object.
         self.name = name
-        self.porride_temp = porride_temp
+        self.porridge_temp = porridge_temp
         self.bed_softness = bed_softness
         
 
