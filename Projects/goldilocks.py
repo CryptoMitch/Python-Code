@@ -47,14 +47,14 @@ def main():
     goldilocks_bed = int(input('How soft do you want your bed?(Between 0 and 10): '))
     
     print("Goldilocks tried the porridge:\n")
-    print(f"Goldilocks found {baby_bear.name}'s porridge {baby_bear.eat_porridge(goldilocks_porridge)}")
-    print(f"Goldilocks found {mama_bear.name}'s porridge {mama_bear.eat_porridge(goldilocks_porridge)}")
-    print(f"Goldilocks found {papa_bear.name}'s porridge {papa_bear.eat_porridge(goldilocks_porridge)}")
+    print(f"Goldilocks found {baby_bear.name}'s porridge {baby_bear.eat_porridge(goldilocks_porridge)}") # Try Baby Bears Porridge
+    print(f"Goldilocks found {mama_bear.name}'s porridge {mama_bear.eat_porridge(goldilocks_porridge)}") # Try Mama Bears Porridge
+    print(f"Goldilocks found {papa_bear.name}'s porridge {papa_bear.eat_porridge(goldilocks_porridge)}") # Try Papa Bears Porridge
     
     print("Goldilocks tried the beds: \n")
-    print(f"Goldilocks found {baby_bear.name}'s bed {baby_bear.try_bed(goldilocks_bed)}")
-    print(f"Goldilocks found {mama_bear.name}'s bed {mama_bear.try_bed(goldilocks_bed)}")
-    print(f"Goldilocks found {papa_bear.name}'s bed {papa_bear.try_bed(goldilocks_bed)}")
+    print(f"Goldilocks found {baby_bear.name}'s bed {baby_bear.try_bed(goldilocks_bed)}") # Try Baby Bears bed
+    print(f"Goldilocks found {mama_bear.name}'s bed {mama_bear.try_bed(goldilocks_bed)}") # Try Mama Bears bed
+    print(f"Goldilocks found {papa_bear.name}'s bed {papa_bear.try_bed(goldilocks_bed)}") # Try Papa Bears bed
     
 if __name__ == "__main__":
     main()
