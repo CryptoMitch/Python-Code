@@ -17,15 +17,21 @@ class Bear: # Superclass that is shared by all bears in the story
         self.porridge_temp = porridge_temp
         self.bed_softness = bed_softness
         
-    def eat_porridge(self, porridge_temp):
-        if self.porridge_temp == porridge_temp:
+    def eat_porridge(self, temp): # Methods take two parameters
+        if self.porridge_temp == temp: # Use porridge_temp to access the bears prefered temp and compare for equality to the actual temp
             return f"{self.name} found the porridge temp just right!"
-        elif self.porridge_temp < porridge_temp:
+        elif self.porridge_temp < temp: # porridge_temp is the prefered temperature whilst temp is the actual temperature
             return f"{self.name} found the porridge too hot!"
         else:
             return f"{self.name} found the porridge too cold."
     
-    
+    def try_Bed(self, softness):
+        if self.bed_softness == softness: # Use porridge_temp to access the bears prefered temp and compare for equality to the actual temp
+            return f'{self.name} found the bed just right!'
+        elif self.bed_softness < softness: # bed_softness is the prefered softness, whilst softness is the actual softness of the bed
+            return f'{self.name} found the bed too hard!'
+        else:
+            return f'{self.name} found the bed too soft.'
     
     
     
