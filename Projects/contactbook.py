@@ -2,6 +2,8 @@
 
 # Skills Demonstrated: Object Oriented Programming, Encapsulation, Dictionaries, .get() method, Lists, File handling, Input Handling I/O, Control Structures, Strings, Exception handling
 
+# Future additions: Collect Email Address, Home Address, Twitter Account.
+
 class Profile:
     def __init__(self, username, phone_number): # Constructor that initialises the attributes of the profile instance
         self.username = username #This accesses the instance of the class and modifies its attributes
@@ -28,8 +30,13 @@ class ContactBook: # Blueprint for how the instances will behave
             for profile in self.profiles.values(): # Iterate through the values of the profiles dictionary
                 file.write(f"{profile.username}, {profile.phone_number}\n") # Write usernames and phone numbers to the file
                 # By leaving this code indent, the file will close because of the context manager 'with' statement
-    def load_from_file(self):
-        pass
+    def load_from_file(self, filename): # Responsible for loading the profiles stored in the contact book
+        with open(filename, 'r') as file: # Use context manager to open the file in reading mode, ensure it closes afterwards
+            lines = file.readlines() # read each line and store inthem inthe lines list
+            for line in lines: # iterate through a loop of each line, each line is each profile
+                username, phone_number = line.strip().split(',') # Split the line of text  into two parts. Strip() removes whitespace
+                self.profiles[username] = Profile(username, phone_number)
+                
     
     
 
