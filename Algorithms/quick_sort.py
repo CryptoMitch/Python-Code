@@ -18,9 +18,9 @@ def quick_sort(arr):
         # Please note that using the integer division above can cause issues with picking an unbalanced pivot because integer division rounds down to zero rather than a decimal
     # Partition the array into three sub arrays
     # x is the shorthand way of saying element
-    left = [] # create a list called left that takes array elements less than the pivot element
-    middle = [] # create a list called middle that takes array elements that equal the pivot element 
-    right = [] # create a list called right that takes array elements greater than the pivot element
+    left = [x for x in arr if x < pivot] # create a list called left that takes array elements less than the pivot element
+    middle = [x for x in arr if x == pivot] # create a list called middle that takes array elements that equal the pivot element 
+    right = [x for x in arr if x > pivot] # create a list called right that takes array elements greater than the pivot element
         
         
         
