@@ -8,10 +8,8 @@ from collections import deque
 
 def bfs_algorithm(graph, start): # start will receive the start_node argument at runtime
     traversed = set() # To keep track of the traversed nodes
+    queue = deque([start]) # Initialise the queue with the starting node which is passed in by start_node
 
-
-
-# Start at the root(AKA arbitrary or inital) node in a graph
 
 
 
@@ -38,6 +36,7 @@ graph = {
     'F': [],
 }
 
-# Pick start node from graph
+# Start at the root(AKA arbitrary or inital) node in a graph
 start_node = 'A'
+print('Breadth-First Search: ')
 bfs_algorithm(graph, start_node) # Calls the implementation of the BFS algorithm
