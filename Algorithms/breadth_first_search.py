@@ -38,3 +38,6 @@ graph = {
     'E': [],
     'F': [],
 }
+
+# Pick start node from graph
+start_node = 'A'
