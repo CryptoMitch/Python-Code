@@ -6,8 +6,8 @@
 # Import module to support adding and subtracting elements from both ends
 from collections import deque
 
-def bfs_algorithm(graph):
-    pass
+def bfs_algorithm(graph, start): # start will receive the start_node argument at runtime
+    traversed = set() # To keep track of the traversed nodes
 
 
 
@@ -29,7 +29,6 @@ def bfs_algorithm(graph):
 
 
 # Implement Graph that is the Adjacency list
-
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
@@ -41,3 +40,4 @@ graph = {
 
 # Pick start node from graph
 start_node = 'A'
+bfs_algorithm(graph, start_node) # Calls the implementation of the BFS algorithm
