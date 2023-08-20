@@ -24,9 +24,8 @@ arr[::-1]:              # Reverses the sequence.
 "Hello"[1:4]            # returns "ell".
 "Hello"[::-1]           # returns "olleH".
 
-# Using Slice in Assignments:
+# Using Slice in Assignments: to modify parts of a sequence
 
-                        # You can also use slices to modify parts of a sequence.
 arr[1:4] = [10, 20, 30] # replaces elements from index 1 to 3 with the new values.
 
 # Default Values:
@@ -34,8 +33,6 @@ arr[1:4] = [10, 20, 30] # replaces elements from index 1 to 3 with the new value
 # If you omit start, it's assumed to be 0.
 # If you omit stop, it's assumed to be the end of the sequence.
 # If you omit step, it's assumed to be 1.
-
-
 
 
 # TDD Tests for Slice Notation
