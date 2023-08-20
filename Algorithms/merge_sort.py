@@ -22,7 +22,7 @@ def merge_sort(arr):
         right_half = arr[mid:] # Use slice notation to create right sublist
         
     # Recursively call the function to sort both lists
-    # Run the algorithm until the sublsits are considered sorted
+    # Run the algorithm until the sublists are considered sorted
     merge_sort(left_half)
     merge_sort(right_half)
     
