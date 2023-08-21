@@ -30,6 +30,14 @@ my_list.append()
     # Good for odered collections of items and performing operations like 
     # Example: Storing user names, to-do list items, log entries.
 
+    # List methods
+my_list.append(5)  # Add an element to the end
+my_list.pop()      # Remove and return the last element
+my_list.index(3)   # Return the index of the first occurrence of 3
+my_list.count(2)   # Return the number of occurrences of 2
+my_list.sort()     # Sort the list in ascending order
+
+
 
 # Dictionary
 my_dict = {'a':1, 'b':2, 'c':3, 'd':4} 
@@ -39,7 +47,15 @@ for key, value in my_dict.items()
     # Sytax, curly brackets and key value pairs
     # Good Example: Storing user data with usernames as keys, mapping countries to their capitals.
     # Bad Usage: Inefficient for storing a simple list of values without associated keys
-    
+
+# Dictionary methods
+my_dict.keys()     # Return a list of all keys
+my_dict.values()   # Return a list of all values
+my_dict.items()    # Return a list of key-value pairs as tuples
+my_dict.get('b')   # Return the value associated with key 'b'
+my_dict.pop('c')   # Remove and return the value associated with key 'c'
+
+   
 # Ordered Dictionary
 from collections import OrderedDict
 
@@ -60,6 +76,15 @@ my_set.add(5) # Adding an element to the set
     # Syntax, curly brackets and only values
     # Example: Keeping track of users who have liked a post, storing unique email addresses.
     # Bad usage: Storing a sequence of items where order matters, like a playlist
+
+set.add(item): # Adds an item to the set.
+set.remove(item): # Removes the specified item from the set.
+set.discard(item): # Removes the specified item from the set if it exists.
+set.union(other_set): # Returns a new set containing all elements from both sets.
+set.intersection(other_set): # Returns a new set containing common elements between two sets.
+
+
+
 
 # ___________________________________________________________________ #
 
@@ -132,22 +157,39 @@ list.index()
 str.find()
 
 
-# Binary Search Functions
-import bisect
 
 
-# Mathematical Operations
-import math 
-
-# Regular expressions
-
-import re
-
+# ___________________________________________________________________ #
 
 ##### Libraries #####
 
+import bisect # Binary Search Functions
+
+import math # Mathematical Operations
+
+import re # Regular expressions
 import NumPy: # For numerical and scientific computing.
 import Pandas: # For data manipulation and analysis.
 import SciPy: # For advanced scientific and technical computations.
 import NetworkX: # For graph algorithms and analysis.
 import sklearn: # For machine learning algorithms.
+
+import matplotlib.pyplot as plt  # For creating plots and visualizations.
+import seaborn as sns  # Builds on Matplotlib for enhanced data visualization.
+
+import requests  # For making HTTP requests.
+import beautifulsoup4 as bs4  # For web scraping and parsing HTML.
+
+import sqlalchemy  # For working with SQL databases using an Object-Relational Mapping (ORM) approach.
+import pymongo  # For interacting with MongoDB databases.
+
+import nltk  # Natural Language Toolkit for text processing and analysis.
+import spacy  # For advanced natural language processing tasks.
+
+import tensorflow as tf  # For machine learning and deep neural networks.
+import keras  # A high-level neural networks API, built on top of TensorFlow.
+
+import opencv-python as cv2  # For computer vision tasks and image processing.
+import Pillow as PIL  # Python Imaging Library for image handling and manipulation.
+
+import pygame  # For creating simple games and multimedia applications.
