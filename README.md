@@ -1,6 +1,6 @@
 # Python-Code
 
-A place to store my Python Projects
+A place to store my Python Projects.
 
 Welcome to my Python Projects repository! This is a collection of various Python projects and algorithms that I've worked on. 
 Feel free to explore and use any of the code provided here.
