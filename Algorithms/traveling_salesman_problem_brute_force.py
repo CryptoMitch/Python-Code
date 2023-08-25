@@ -14,3 +14,32 @@
 # n is the number of cities. The algorithm checks all possible permutations of cities
 
 import itertools # tools for working with iterators, combinations, and permutations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Two Arrays of Cities to Test Number of Operations
+
+australian_cities = [
+    "Sydney", "Melbourne", "Brisbane", "Perth", 
+    "Adelaide", "Gold Coast", "Canberra", 
+    "Newcastle", "Hobart", "Darwin"
+]
+
+asian_cities = [
+    "Tokyo", "Seoul", "Shanghai", "Beijing", "Bangkok",
+    "Mumbai", "Singapore", "Kuala Lumpur", "Jakarta", "Manila",
+    "Delhi", "Taipei", "Hanoi", "Ho Chi Minh City", "Osaka",
+    "Kyoto", "Hong Kong", "Dubai", "Kolkata", "Karachi"
+]
