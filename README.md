@@ -5,6 +5,18 @@ A place to store my Python Projects.
 Welcome to my Python Projects repository! This is a collection of various Python projects and algorithms that I've worked on. 
 Feel free to explore and use any of the code provided here.
 
+**Definitions**
+
+Challenge: Challenges are specific tasks or problems that require solutions, often with constraints or limitations.
+
+Algorithm: Algorithms are step-by-step procedures or rules for solving problems or performing tasks.
+
+Project: A project encompasses various tasks across different areas, like algorithm design, challenge solving, and feature implementation.
+
+Tests: Tests involve evaluating the functionality and correctness of code or systems.
+
+LeetCode Problems: LeetCode problems are coding challenges available on the LeetCode platform to practice and test programming skills
+
 **Challenges**
 
 1. Challenge1: find numbers divisible by seven but not a multiple of five

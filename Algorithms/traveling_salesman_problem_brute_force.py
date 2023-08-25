@@ -13,7 +13,7 @@
 import itertools # tools for working with iterators, combinations, and permutations.
 import math 
 
-def distance(city1, city2):
+def distance(city1, city2): # implement the Haversine formula
     return 0
 
 def total_distance(path): # calculates the total distance of a given path
