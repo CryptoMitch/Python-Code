@@ -85,3 +85,7 @@ Explore various algorithms implemented in Python:
 **Projects from the following sites:**
 
 - https://www.youtube.com/watch?v=8ext9G7xspg&t=1448s
+
+
+**My 250 days of Code List:**
+- https://docs.google.com/spreadsheets/d/1SdkP-WxjUSh--m-cXRhz4PSkqoJbsksfNW2I_3IMopg/edit?usp=sharing
