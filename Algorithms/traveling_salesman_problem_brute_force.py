@@ -22,22 +22,8 @@ def total_distance(path): # calculates the total distance of a given path
         total += distance(path[i], path[i + 1]) # calculates the distance between the current city and the next city
     total += distance(path[-1], path[0]) # calculates the distance required to return to the starting city then add to total
     return total # return the accumulated total distance
-        
-def brute_force_tsp(cities):
-    pass
 
-
-
-
-
-
-
-print("Shortest path:", best_path)
-print("Shortest distance: ", best_distance)
-
-
-# Two Arrays of Cities to Test Number of Operations
-
+# Define the dictionary of Australian cities
 australian_cities = {
     "Sydney":(-33.8688, 151.2093), 
     "Melbourne": (-37.8136, 144.9631), 
@@ -50,6 +36,26 @@ australian_cities = {
     "Hobart": (-42.8821, 147.3272), 
     "Darwin": (-12.4628, 130.8417)
 }
+        
+def brute_force_tsp(australian_cities):
+    shortest_path = None
+    shortest_distance = float('inf') # initialise local variable with no upper bound for shortest distance
+    
+    for path in itertools.permutations(australian_cities):   # Call permutations function from itertools module to generate all possible permutations
+        d = total_distance(path) # Calculate the total distance for the current path
+        if d < shortest_distance: # check if current path total distance is shorter than shortest distance found so far
+            shortest_distance = d # update the new shortest distance
+            shortest_path = path
+            
+    return shortest_path, shortest_distance
+
+# Tuple unpacking to be able to capture and display the results
+best_path, best_distance = brute_force_tsp(australian_cities.values())
+print("Shortest path:", best_path)
+print("Shortest distance: ", best_distance)
+
+
+# Two Arrays of Cities to Test Number of Operations
 
 asian_cities = {
     "Tokyo": (35.6895, 139.6917),
