@@ -1,21 +1,30 @@
 # Traveling Salesman Problem (TSP) Brute Force: 
 # Time Complexity: O(n!)
 
+# The Traveling Salesman Problem is a classic optimization problem. 
+# It involves finding the shortest possible route that visits a set of cities and returns to the starting city. 
+# The brute-force solution involves checking all possible permutations of cities to find the shortest route.
+
 # Do not use in production code as it has factorial time complexity which is one of the least efficient.
 
 # For example, with just 10 cities, you'd need to perform 3,628,800 operations. 
 # With 20 cities, you'd need to perform 2,432,902,008,176,640,000 operations, which is a staggering number.
 
-# The Traveling Salesman Problem is a classic optimization problem. 
-# It involves finding the shortest possible route that visits a set of cities 
-# and returns to the starting city. The brute-force solution involves checking 
-# all possible permutations of cities to find the shortest route.
-
-# n is the number of cities. The algorithm checks all possible permutations of cities
-
 import itertools # tools for working with iterators, combinations, and permutations.
 import math 
 
+def distance(city1, city2):
+    return 0
+
+def total_distance(path): # calculates the total distance of a given path
+    total = 0 # encapsulate the variable inside the function to localise the scope
+    for i in range(len(path) - 1):
+        total += distance(path[i], path[i + 1]) # calculates the distance between the current city and the next city
+    total += distance(path[-1], path[0]) # calculates the distance required to return to the starting city then add to total
+    return total # return the accumulated total distance
+        
+def brute_force_tsp(cities):
+    pass
 
 
 
@@ -23,10 +32,8 @@ import math
 
 
 
-
-
-
-
+print("Shortest path:", best_path)
+print("Shortest distance: ", best_distance)
 
 
 # Two Arrays of Cities to Test Number of Operations
