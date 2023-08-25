@@ -51,7 +51,13 @@ def brute_force_tsp(australian_cities):
 
 # Tuple unpacking to be able to capture and display the results
 best_path, best_distance = brute_force_tsp(australian_cities.values())
-print("Shortest path:", best_path)
+
+# Create a list of city names from the co-ordinates in the best path
+city_names = [city for city, _ in best_path]
+# Join the cities together to form journey
+formatted_path = ' -> '.join(city_names)
+
+print("Shortest path:", formatted_path)
 print("Shortest distance: ", best_distance)
 
 
