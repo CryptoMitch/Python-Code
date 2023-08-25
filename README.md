@@ -20,6 +20,12 @@ LeetCode Problems: LeetCode problems are coding challenges available on the Leet
 **Challenges**
 
 1. Challenge1: find numbers divisible by seven but not a multiple of five
+2. Reverse words
+3. Calculate fib numbers
+4. Square even numbers divisble by 8
+5. Error Types
+6. Slice Notation
+7. Haversine Formula
 
 **Projects**
 
@@ -56,14 +62,14 @@ Explore various algorithms implemented in Python:
 3. Binary Search (Completed)
 4. Binary Search for Strings (Completed)
 5. Merge Sort (Completed)
-6. Breadth-First Search (Coming soon)
-7. Brute Force Subset Sum (Coming soon)
-8. Depth-First Search (Coming soon)
-9. Insertion Sort (Coming soon)
-10. Knapsack Problem (Coming soon)
-11. Linear Search (Coming soon)
-12. Quick Sort (Coming soon)
-13. Traveling Salesman Problem (Brute Force) (Coming soon)
+6. Traveling Salesman Problem (Brute Force)
+7. Breadth-First Search (Coming soon)
+8. Brute Force Subset Sum (Coming soon)
+9. Depth-First Search (Coming soon)
+10. Insertion Sort (Coming soon)
+11. Knapsack Problem (Coming soon)
+12. Linear Search (Coming soon)
+13. Quick Sort (Coming soon)
 
 
 **Tests**
