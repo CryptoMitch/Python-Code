@@ -9,21 +9,22 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
 
-        prices = [7,1,5,3,6,4]
         lowest_day = 0
         high_after_low_day = 0
-        Figure out the index of the prices
+        profit = 0
 
-        # List comprehension - price for price in prices if price equals min(prices)
-
-        if high_after_low_day is before lowest_day:
-            return -1
-        elif lowest_day is before highest_day:
-            # prepare logic
-        
-        profit = sum(high_after_low_day - lowest_day)
+        for i in range(len(prices)):
+            if prices[i] < prices[lowest_day]:
+                lowest_day = i
+            elif lowest_day <= high_after_low_day:
+                # prepare logic
+            return profit = (high_after_low_day - lowest_day)
 
         return [lowest_day, high_after_low_day]
         print(f"The best time to buy is {lowest_day} day and sell is {high_after_low_day} day.")
         return print(f"Total profit is: {profit}")
-        
+
+# Example usage
+solution = Solution()
+prices = 7, 1, 5, 3, 6, 4]
+print(solution.maxProfit(prices))
