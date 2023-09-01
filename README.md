@@ -76,18 +76,18 @@ Explore various algorithms implemented in Python:
 **LeetCode Problems** (Number order not solved order)
 
 1_Two Sum ✅
-121_Best Time To Buy And Sell Stocks ✅
-283_Move Zeros ✅
-345_Reverse Vowels ✅
-643_Max Average Subarray ✅
-1071_Greatest Common Divisor of Strings ✅
-1431_Kids with greatest number of candies ✅
-1768_merge strings alternatively ✅
+* 121_Best Time To Buy And Sell Stocks ✅
+* 283_Move Zeros ✅
+* 345_Reverse Vowels ✅
+* 643_Max Average Subarray ✅
+* 1071_Greatest Common Divisor of Strings ✅
+* 1431_Kids with greatest number of candies ✅
+* 1768_merge strings alternatively ✅
 
 **Tests**
 
-1. unit_test_sample.py (Completed)
-2. reverse_words_test.py (Completed)
+1. unit_test_sample.py ✅
+2. reverse_words_test.py ✅
 3. ... (More tests are being added)
 
 **Challenges from the following sites:**
