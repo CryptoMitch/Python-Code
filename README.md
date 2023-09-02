@@ -19,29 +19,29 @@ LeetCode Problems: LeetCode problems are coding challenges available on the Leet
 
 **Challenges**
 
-1. Challenge1: find numbers divisible by seven but not a multiple of five
-2. Reverse words
-3. Calculate fib numbers
-4. Square even numbers divisble by 8
-5. Error Types
-6. Slice Notation
-7. Haversine Formula
+1. Challenge1: divisible by seven but not a multiple of five ✅
+2. Reverse words ✅
+3. Calculate fib numbers ✅
+4. Square even numbers divisble by 8 ✅
+5. Error Types ✅
+6. Slice Notation ✅
+7. Haversine Formula ✅
 
 **Projects**
 
-1. Roosevelt Madlibs
-2. Guess the Number (Computer)
-3. Guess the Number (User)
-4. Rock Paper Scissors Lizard Spock
-5. Hangman with Time Limit
-6. ... (More projects are being added)
+1. Roosevelt Madlibs ✅
+2. Guess the Number (Computer) ✅
+3. Guess the Number (User) ✅
+4. Rock Paper Scissors Lizard Spock ✅
+5. Hangman with Time Limit ✅
+6. ... (More projects are being added) 
 
 
 **Fairy Tale Inspired Projects**
 
 Explore a whimsical world of Python projects inspired by classic fairy tales:
 
-1. Goldilocks (Completed)
+1. Goldilocks ✅
 2. Aladdin's Flying Carpet (Coming soon)
 3. Beauty and the Beast (Coming soon)
 4. Cinderella's Clock (Coming soon)
@@ -57,24 +57,37 @@ Explore a whimsical world of Python projects inspired by classic fairy tales:
 
 Explore various algorithms implemented in Python:
 
-1. Bubble Sort (Completed)
-2. Selection Sort (Completed)
-3. Binary Search (Completed)
-4. Binary Search for Strings (Completed)
-5. Merge Sort (Completed)
-6. Traveling Salesman Problem (Brute Force)
-7. Breadth-First Search (Coming soon)
-8. Brute Force Subset Sum (Coming soon)
-9. Depth-First Search (Coming soon)
-10. Insertion Sort (Coming soon)
-11. Knapsack Problem (Coming soon)
-12. Linear Search (Coming soon)
-13. Quick Sort (Coming soon)
+1. Bubble Sort ✅
+2. Selection Sort ✅
+3. Binary Search ✅
+4. Binary Search for Strings ✅
+5. Merge Sort ✅
+6. Traveling Salesman Problem (Brute Force) ✅
+7. Breadth-First Search ✅
+8. Linear Search ✅
+9. Quick Sort ✅
+10. Sliding Window ✅
+11. Euclidean Algorithm ✅
+12. Brute Force Subset Sum (Coming soon)
+13. Depth-First Search (Coming soon)
+14. Insertion Sort (Coming soon)
+15. Knapsack Problem (Coming soon)
 
+**LeetCode Problems** (Number order not solved order)
+
+1_Two Sum ✅
+* 121_Best Time To Buy And Sell Stocks ✅
+* 283_Move Zeros ✅
+* 345_Reverse Vowels ✅
+* 643_Max Average Subarray ✅
+* 1071_Greatest Common Divisor of Strings ✅
+* 1431_Kids with greatest number of candies ✅
+* 1768_merge strings alternatively ✅
 
 **Tests**
-1. unit_test_sample.py (Completed)
-2. reverse_words_test.py (Completed)
+
+1. unit_test_sample.py ✅
+2. reverse_words_test.py ✅
 3. ... (More tests are being added)
 
 **Challenges from the following sites:**
