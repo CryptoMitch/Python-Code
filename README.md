@@ -7,15 +7,11 @@ Feel free to explore and use any of the code provided here.
 
 **Definitions**
 
-Challenge: Challenges are specific tasks or problems that require solutions, often with constraints or limitations.
-
-Algorithm: Algorithms are step-by-step procedures or rules for solving problems or performing tasks.
-
-Project: A project encompasses various tasks across different areas, like algorithm design, challenge solving, and feature implementation.
-
-Tests: Tests involve evaluating the functionality and correctness of code or systems.
-
-LeetCode Problems: LeetCode problems are coding challenges available on the LeetCode platform to practice and test programming skills
+* Challenge: Specific tasks or problems that require solutions, often with constraints or limitations.
+* Algorithm: Step-by-step procedures or rules for solving problems or performing tasks.
+* Project: Encompasses various tasks across different areas, like algorithm design, challenge solving, and feature implementation.
+* Tests: Tests involve evaluating the functionality and correctness of code or systems.
+* LeetCode Problems: Challenges available on the LeetCode platform to practice and test programming skills
 
 **Challenges**
 
@@ -75,13 +71,15 @@ Explore various algorithms implemented in Python:
 
 **LeetCode Problems** (Number order not solved order)
 
-1_Two Sum ✅
+* 1_Two Sum ✅
 * 121_Best Time To Buy And Sell Stocks ✅
 * 283_Move Zeros ✅
 * 345_Reverse Vowels ✅
+* 374_Guess the Number ✅
 * 643_Max Average Subarray ✅
 * 1071_Greatest Common Divisor of Strings ✅
 * 1431_Kids with greatest number of candies ✅
+* 1732_Find Highest Altitude ✅
 * 1768_merge strings alternatively ✅
 
 **Tests**
