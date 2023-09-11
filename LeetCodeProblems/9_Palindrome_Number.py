@@ -19,3 +19,7 @@ class Solution:
             reversed_x = (reversed_x * 10) + (x % 10)
             x = x // 10
         return number == reversed_x
+
+
+        # Convert to String Answer
+            # return str(x) == str(x)[::-1]
