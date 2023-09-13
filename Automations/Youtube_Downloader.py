@@ -10,3 +10,6 @@ yt = YouTube(link) # create Youtube object from the link
 print("Title: ", yt.title) # print Title of Youtube Video
 print("Views: ", yt.views) # print number of views of Youtube Video
 
+# Download Youtube Video
+youtubedownload = yt.streams.get_highest_resolution()
+youtubedownload.download("/Users/mitch/Downloads")
